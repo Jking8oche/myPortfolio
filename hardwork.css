@@ -1,0 +1,243 @@
+.sub-title4{
+    color:#fff;
+    font-size: 50px;
+    text-align: center;
+    justify-items: center;
+   }
+   .sub-title4 span{
+    color:aqua;
+    font-size: 50px;
+   }
+    .section4 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .container4 {
+        width: 90%;
+        max-width: 800px;
+        padding: 5%;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .heading4 {
+        text-align: center;
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        text-decoration-thickness: 5px;
+        margin-bottom: 30px;
+        color:black;
+        font-size: 30px;
+    }
+
+    .bar4 {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .bar4 i {
+        margin-right: 10px;
+    }
+
+    .bar4 .info4 {
+        flex-grow: 1;
+        color: #000000;
+        margin-left: 20px;
+    }
+
+    .progress-container4 {
+        position: relative;
+        width: 100%;
+        height: 10px;
+        background-color: #000000;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    
+    .progress-html{
+        width: 90%;
+        position: absolute;
+        height: 100%;
+        background-color: blue;
+        border-radius: 5px;
+        animation: animate 1s cubic-bezier(1, 0, 0, 5, 1) forwards;
+        transform-origin: left;
+    }
+    .progress-css{
+        width: 80%;
+        position: absolute;
+      
+        height: 100%;
+        background-color: green;
+        border-radius: 5px;
+        animation: animate 1s cubic-bezier(1, 0, 0, 5, 1) forwards;
+        transform-origin: left;
+    }
+    .progress-javascript{
+        width: 70%;
+        position: absolute;
+      
+        height: 100%;
+        background-color: gold;
+        border-radius: 5px;
+        animation: animate 1s cubic-bezier(1, 0, 0, 5, 1) forwards;
+        transform-origin: left;
+    }
+    .progress-python{
+        width: 75%;
+        position: absolute;
+      
+        height: 100%;
+        background-color: orange;
+        border-radius: 5px;
+        animation: animate 1s cubic-bezier(1, 0, 0, 5, 1) forwards;
+        transform-origin: left;
+    }
+    .progress-react{
+        width: 70%;
+        position: absolute;
+        height: 100%;
+        background-color: purple;
+        border-radius: 5px;
+        animation: animate 1s cubic-bezier(1, 0, 0, 5, 1) forwards;
+        transform-origin: left;
+    }
+
+   
+
+    .progress-html::after {
+        content: "90%";
+        position: absolute;
+        padding: 1px 8px;
+        background-color: purple;
+        padding: 5px;
+        padding-right: 7px;
+        border-radius: 50%;
+        color: #fff;
+        font-size: 15px;
+      width:25px;
+      height: 25px;
+        top: -13px;
+        right: 0;
+        opacity: 0;
+        animation: showText 0.5s 1.5s linear forwards;
+    }
+
+    .progress-css::after {
+        content: "80%";
+        position: absolute;
+        padding: 1px 8px;
+        background-color: gold;
+        width:25px;
+        height: 25px;
+        padding-right: 7px;
+        border-radius: 50%;
+        padding: 5px;
+        
+        color: #fff;
+        font-size: 15px;
+        top: -13px;
+        right: 0;
+        opacity: 0;
+        animation: showText 0.5s 1.5s linear forwards;
+    }
+    .progress-javascript::after {
+        content: "70%";
+        position: absolute;
+        padding: 1px 8px;
+        background-color: blue;
+        width:25px;
+        height: 25px;
+        padding: 5px;
+        padding-right: 7px;
+        border-radius: 50%;
+        color: #fff;
+        font-size: 15px;
+        top: -13px;
+        right: 0;
+        opacity: 0;
+        animation: showText 0.5s 1.5s linear forwards;
+    }
+    .progress-python::after {
+        content: "75%";
+        position: absolute;
+        padding: 1px 8px;
+        background-color: green;
+        padding-right: 7px;
+        border-radius: 50%;
+        width:25px;
+        height: 25px;
+        padding: 5px;
+        color: #fff;
+        font-size: 15px;
+        top: -13px;
+        right: 0;
+        opacity: 0;
+        animation: showText 0.5s 1.5s linear forwards;
+    }
+    .progress-react::after {
+        content: "70%";
+        position: absolute;
+        padding: 1px 8px;
+        width:25px;
+        height: 25px;
+        background-color: orange;
+        padding: 5px;
+        padding-right: 7px;
+        border-radius: 50%;
+        color: #fff;
+        font-size: 15px;
+        top: -13px;
+        right: 0;
+        opacity: 0;
+        animation: showText 0.5s 1.5s linear forwards;
+    }
+    .progress-line span {
+        display: block;
+        height: 100%;
+        border-radius: 5px;
+    }
+
+    @keyframes animate {
+        to {
+            transform: scaleX(1);
+        }
+    }
+
+    @keyframes showText {
+        to {
+            opacity: 1;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .container4{
+            width: 100%;
+        }
+        .bar4 {
+            flex-direction: column;
+        }
+
+        .bar4 i {
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+
+        .bar4 .info4 {
+            text-align: center;
+        }
+        .bar4 .info4 span{
+            margin-left: -60px;
+        }
+
+        .progress-line::after {
+            top: 10px;
+        }
+    }
