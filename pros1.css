@@ -1,0 +1,63 @@
+.progress-container {
+    margin-left: 50px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .skill {
+    position: relative;
+    width: 80%;
+    margin-bottom: 15px;
+  }
+  
+  .progress-bar {
+    position: relative;
+    height: 15px;
+    background-color: #e0e0e0;
+    width: 100%;
+    border-radius: 25px;
+    
+  }
+  
+  .progress-line {
+    position: absolute;
+    height: 15px;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #4caf50; /* Change to your desired progress line color */
+    transition: width 1s ease-in-out;
+    border-radius:  25px;
+  }
+  
+  .progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: #fff; /* Adjust text color for better visibility */
+  }
+  
+  p {
+    margin: 0;
+  }
+  
+  @media screen and (min-width: 600px) {
+    .skill {
+      width: 60%;
+    }
+  }
+  
+  @media screen and (min-width: 900px) {
+    .progress-container {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  
+    .skill {
+      width: 30%;
+    }
+  }

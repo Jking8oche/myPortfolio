@@ -1,0 +1,242 @@
+/*.col1 .skills h1{
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    color:#fff;
+    font-size: 16px;
+}
+.col1 .skills .progress-bar{
+    background: #959595;
+    width:95%;
+    height: 5px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.col1 .skills .progress-bar div{
+    height: 5px;
+    border-radius: 5px;
+    width: 0;
+    
+}
+.col1 .skills .progress-bar div span{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: #fff;
+    float: right;
+    margin-top: -15px;
+    margin-right: -20px;
+    color:#333;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.html{
+    background: #e91e63;
+    animation: html 2s linear forwards ;
+}
+.css{
+    background: #cddc39;
+    animation: css 2s linear forwards ;
+}
+.javascript{
+    background: #00bcd4;
+    animation: javascript 2s linear forwards ;
+}
+.python{
+    background: #eddc39;
+    animation: python 2s linear forwards ;
+}
+.react{
+    background: #00bcd4;
+    animation: react 2s linear forwards ;
+}
+
+.html span{
+    border: 1px solid #e91e63;
+}
+
+.css span{
+    border: 1px solid #cddc39;
+}
+.javascript span{
+    border: 1px solid #00bcd4;
+}
+.python span{
+    border: 1px solid #ffeb3b;
+}
+.react span{
+    border: 1px solid #9c27b0;
+}
+@keyframes html {
+    100%{
+        width: 90%;
+    }
+}
+@keyframes css {
+    100%{
+        width: 80%;
+    }
+}
+@keyframes javascript {
+    100%{
+        width: 78%;
+    }
+}
+@keyframes python {
+    100%{
+        width: 70%;
+    }
+}
+@keyframes react {
+    100%{
+        width: 75%;
+    }
+}
+@media (max-width: 890px){
+    .col1 .skills .progress-bar div span{
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background: #fff;
+        float: right;
+        margin-top: -15px;
+       
+        color:#333;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .col1 .skills .progress-bar{
+       
+        width:100%;
+        
+    }
+    
+}
+
+*/
+.col1 .skills h1 {
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.col1 .skills .progress-bar {
+    background: #959595;
+    width: 95%;
+    height: 5px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.col1 .skills .progress-bar div {
+    height: 5px;
+    border-radius: 5px;
+    width: 0;
+}
+
+.col1 .skills .progress-bar div span {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: #fff;
+    float: right;
+    margin-top: -15px;
+    margin-right: -20px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Update colors and animations for a professional look */
+.html {
+    background: #ff4081; /* Pink color */
+    animation: html 2s linear forwards;
+}
+
+.css {
+    background: #8bc34a; /* Green color */
+    animation: css 2s linear forwards;
+}
+
+.javascript {
+    background: #03a9f4; /* Blue color */
+    animation: javascript 2s linear forwards;
+}
+
+.python {
+    background: #ffd54f; /* Yellow color */
+    animation: python 2s linear forwards;
+}
+
+.react {
+    background: #03a9f4; /* Blue color */
+    animation: react 2s linear forwards;
+}
+
+.html span {
+    border: 1px solid #ff4081;
+}
+
+.css span {
+    border: 1px solid #8bc34a;
+}
+
+.javascript span {
+    border: 1px solid #03a9f4;
+}
+
+.python span {
+    border: 1px solid #ffeb3b;
+}
+
+.react span {
+    border: 1px solid #03a9f4;
+}
+
+@keyframes html {
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes css {
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes javascript {
+    100% {
+        width: 78%;
+    }
+}
+
+@keyframes python {
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes react {
+    100% {
+        width: 75%;
+    }
+}
+
+@media (max-width: 890px) {
+    .col1 .skills .progress-bar div span {
+        margin-right: 0;
+    }
+
+    .col1 .skills .progress-bar {
+        width: 100%;
+        margin-left: 0;
+    }
+}
